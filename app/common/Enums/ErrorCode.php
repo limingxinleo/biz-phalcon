@@ -28,4 +28,9 @@ class ErrorCode extends Enum
      */
     public static $ENUM_SYSTEM_API_CONFIG_NOT_EXIST = 402;
 
+    /**
+     * @Message('API请求参数非法')
+     */
+    public static $ENUM_SYSTEM_API_REQUEST_ILLEGAL = 403;
+
 }

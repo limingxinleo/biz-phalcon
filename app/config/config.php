@@ -135,6 +135,7 @@ return new Config(
             'configDir' => APP_PATH . '/config/',
             'controllersDir' => APP_PATH . '/controllers/',
             'coreDir' => APP_PATH . '/core/',
+            'gateDir' => APP_PATH . '/gate/',
             'jobsDir' => APP_PATH . '/jobs/',
             'libraryDir' => APP_PATH . '/library/',
             'middlewareDir' => APP_PATH . '/middleware/',

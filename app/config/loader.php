@@ -26,6 +26,7 @@ $loader
             'App\Biz' => $config->application->bizDir,
             'App\Common' => $config->application->commonDir,
             'App\Repository' => $config->application->repositoryDir,
+            'App\Gate' => $config->application->gateDir,
         ]
     )->registerFiles(
         [

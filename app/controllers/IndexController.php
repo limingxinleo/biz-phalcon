@@ -8,9 +8,10 @@
 // +----------------------------------------------------------------------
 namespace App\Controllers;
 
-use App\Common\Enums\ErrorCode;
-use App\Common\Exceptions\CodeException;
-use App\Core\System;
+use App\Gate\Business\Index\IndexBusiness;
+use App\Gate\Request\Index\IndexRequest;
+use App\Gate\Response\Index\IndexResponse;
+use App\Gate\Validator\Index\IndexValidator;
 
 class IndexController extends Controller
 {
@@ -22,7 +23,7 @@ class IndexController extends Controller
      */
     public function indexAction()
     {
-        $this->view->version = System::getInstance()->version();
-        return $this->view->render('index', 'index');
+        // return $request;
+        return $this->execute(new IndexRequest(), new IndexValidator(), new IndexBusiness(), new IndexResponse());
     }
 }
