@@ -8,6 +8,7 @@
 // +----------------------------------------------------------------------
 namespace App\Utils;
 
+use App\Biz\CodeException;
 use App\Common\Enums\ErrorCode;
 
 class Curl
@@ -40,7 +41,7 @@ class Curl
         $result = curl_exec($ch);
         if ($result === false) {
             $msg = 'Curl error: ' . curl_error($ch);
-            throw new \Exception($msg, ErrorCode::$ENUM_SYSTEM_CURL_ERROR);
+            throw new CodeException(ErrorCode::$ENUM_SYSTEM_CURL_ERROR, $msg);
         }
         //关闭URL请求
         curl_close($ch);
@@ -70,7 +71,7 @@ class Curl
         $result = curl_exec($ch);
         if ($result === false) {
             $msg = 'Curl error: ' . curl_error($ch);
-            throw new \Exception($msg, ErrorCode::$ENUM_SYSTEM_CURL_ERROR);
+            throw new CodeException(ErrorCode::$ENUM_SYSTEM_CURL_ERROR, $msg);
         }
         //关闭URL请求
         curl_close($ch);
