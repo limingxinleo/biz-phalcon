@@ -8,6 +8,8 @@
 // +----------------------------------------------------------------------
 namespace App\Controllers;
 
+use App\Common\Enums\ErrorCode;
+use App\Common\Exceptions\CodeException;
 use App\Core\System;
 
 class IndexController extends Controller

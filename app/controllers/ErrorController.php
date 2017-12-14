@@ -8,11 +8,11 @@
 // +----------------------------------------------------------------------
 namespace App\Controllers;
 
-use App\Controllers\Traits\Response;
+use App\Common\Enums\ErrorCode;
+use App\Utils\Response;
 
 class ErrorController extends \Phalcon\Mvc\Controller
 {
-    use Response;
 
     /**
      * @desc   404
@@ -22,7 +22,7 @@ class ErrorController extends \Phalcon\Mvc\Controller
     public function show404Action()
     {
         if ($this->request->isPost()) {
-            return static::error('页面找不到了~');
+            return Response::fail(ErrorCode::$ENUM_SYSTEM_ERROR);
         }
         return $this->view->render('public', '404');
     }
@@ -51,6 +51,6 @@ class ErrorController extends \Phalcon\Mvc\Controller
      */
     public function jsonAction($status = 0, $msg = "")
     {
-        return static::response($status, [], $msg);
+        return Response::fail(ErrorCode::$ENUM_SYSTEM_ERROR, $msg);
     }
 }
