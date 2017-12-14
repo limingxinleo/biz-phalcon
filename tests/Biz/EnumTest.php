@@ -1,21 +1,24 @@
 <?php
 // +----------------------------------------------------------------------
-// | ErrorCode.php [ WE CAN DO IT JUST THINK IT ]
+// | Enum.php [ WE CAN DO IT JUST THINK IT ]
 // +----------------------------------------------------------------------
 // | Copyright (c) 2016-2017 limingxinleo All rights reserved.
 // +----------------------------------------------------------------------
 // | Author: limx <715557344@qq.com> <https://github.com/limingxinleo>
 // +----------------------------------------------------------------------
-namespace App\Common\Enums;
+namespace Tests\Biz;
 
-use Xin\Phalcon\Enum\Enum;
+use App\Common\Enums\ErrorCode;
+use \UnitTestCase;
 
-class ErrorCode extends Enum
+/**
+ * Class UnitTest
+ */
+class EnumTest extends UnitTestCase
 {
-
-    /**
-     * @Message('系统错误')
-     */
-    public static $ENUM_SYSTEM_ERROR = 400;
-
+    public function testGetMessage()
+    {
+        $code = ErrorCode::$ENUM_SYSTEM_ERROR;
+        $this->assertEquals('系统错误', ErrorCode::getMessage($code));
+    }
 }

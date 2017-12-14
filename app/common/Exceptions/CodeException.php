@@ -8,9 +8,18 @@
 // +----------------------------------------------------------------------
 namespace App\Common\Exceptions;
 
+use App\Common\Enums\ErrorCode;
 use Exception;
+use Throwable;
 
 class CodeException extends Exception
 {
+    public function __construct($code = 0, $message = null, Throwable $previous = null)
+    {
+        if ($message === null) {
+            $message = ErrorCode::getMessage($code);
+        }
+        parent::__construct($message, $code, $previous);
+    }
 
 }
