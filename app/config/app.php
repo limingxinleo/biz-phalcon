@@ -15,4 +15,10 @@ return [
     'error-code' => [
         500 => '服务器错误！',
     ],
+
+    'api' => [
+        'local' => [
+            'test' => 'http://demo.phalcon.lmx0536.cn',
+        ],
+    ],
 ];

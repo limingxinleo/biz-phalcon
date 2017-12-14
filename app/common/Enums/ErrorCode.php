@@ -23,4 +23,9 @@ class ErrorCode extends Enum
      */
     public static $ENUM_SYSTEM_CURL_ERROR = 401;
 
+    /**
+     * @Message('API 配置不存在')
+     */
+    public static $ENUM_SYSTEM_API_CONFIG_NOT_EXIST = 402;
+
 }
