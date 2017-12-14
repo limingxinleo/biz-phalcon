@@ -8,8 +8,8 @@
 // +----------------------------------------------------------------------
 namespace App\Utils;
 
-use App\Biz\CodeException;
 use App\Common\Enums\ErrorCode;
+use App\Common\Exceptions\CodeException;
 
 class Curl
 {
