@@ -23,9 +23,12 @@ $loader
             'App\Utils' => $config->application->utilsDir,
             'App\Core' => $config->application->coreDir,
             'App\Middleware' => $config->application->middlewareDir,
+            'App\Biz' => $config->application->bizDir,
+            'App\Common' => $config->application->commonDir,
         ]
     )->registerFiles(
         [
-            'function' => $config->application->coreDir . 'helper.php',
+            $config->application->coreDir . 'helper.php',
+            $config->application->commonDir . 'helper.php',
         ]
     )->register();
