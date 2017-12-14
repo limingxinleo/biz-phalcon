@@ -139,6 +139,7 @@ return new Config(
             'libraryDir' => APP_PATH . '/library/',
             'middlewareDir' => APP_PATH . '/middleware/',
             'modelsDir' => APP_PATH . '/models/',
+            'repositoryDir' => APP_PATH . '/repository/',
             'tasksDir' => APP_PATH . '/tasks/',
             'utilsDir' => APP_PATH . '/utils/',
             'viewsDir' => APP_PATH . '/views/',

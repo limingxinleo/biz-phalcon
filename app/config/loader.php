@@ -25,6 +25,7 @@ $loader
             'App\Middleware' => $config->application->middlewareDir,
             'App\Biz' => $config->application->bizDir,
             'App\Common' => $config->application->commonDir,
+            'App\Repository' => $config->application->repositoryDir,
         ]
     )->registerFiles(
         [
