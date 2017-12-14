@@ -18,4 +18,9 @@ class ErrorCode extends Enum
      */
     public static $ENUM_SYSTEM_ERROR = 400;
 
+    /**
+     * @Message('CURL接口访问失败')
+     */
+    public static $ENUM_SYSTEM_CURL_ERROR = 401;
+
 }
