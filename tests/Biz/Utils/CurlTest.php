@@ -29,16 +29,16 @@ class CurlTest extends UnitTestCase
 
     public function testGetCase()
     {
-        $res = Curl::get($this->url . '/test/api/api?test_get_case=1');
-        $this->assertEquals(1, $res['data']['body']['test_get_case']);
+        $res = Curl::get($this->url . '/api/request?test_get_case=1');
+        $this->assertEquals(1, $res['model']['body']['test_get_case']);
 
-        $res = Curl::get($this->url . '/test/api/api', ['test_get_case' => 1]);
-        $this->assertEquals(1, $res['data']['body']['test_get_case']);
+        $res = Curl::get($this->url . '/api/request', ['test_get_case' => 1]);
+        $this->assertEquals(1, $res['model']['body']['test_get_case']);
     }
 
     public function testJsonCase()
     {
-        $res = Curl::json($this->url . '/test/api/api', ['test_json_case' => 1]);
-        $this->assertEquals(1, $res['data']['json']['test_json_case']);
+        $res = Curl::json($this->url . '/api/request', ['test_json_case' => 1]);
+        $this->assertEquals(1, $res['model']['json']['test_json_case']);
     }
 }

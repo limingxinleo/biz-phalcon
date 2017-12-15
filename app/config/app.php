@@ -18,7 +18,7 @@ return [
 
     'api' => [
         'local' => [
-            'test' => 'http://demo.phalcon.lmx0536.cn',
+            'test' => 'http://api.demo.phalcon.lmx0536.cn',
         ],
     ],
 ];

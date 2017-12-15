@@ -17,7 +17,7 @@ class TestClient extends Client
 {
     public function test()
     {
-        $route = '/test/api/api';
+        $route = '/api/request';
         $params = ['test_client' => 1];
         return $this->httpGet($route, $params);
     }
