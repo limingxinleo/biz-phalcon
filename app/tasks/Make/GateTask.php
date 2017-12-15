@@ -6,6 +6,7 @@ use App\Tasks\Task;
 use Phalcon\Text;
 use Xin\Cli\Color;
 use Xin\Phalcon\Cli\Traits\Input;
+use Xin\Support\File;
 
 class GateTask extends Task
 {
@@ -63,7 +64,7 @@ class GateTask extends Task
             echo Color::error('文件已存在！') . PHP_EOL;
             return;
         }
-        
+
         $template = "<?php
 namespace App\Gate\\$type\\%s;
 
