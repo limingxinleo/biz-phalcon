@@ -55,6 +55,15 @@ class GateTask extends Task
         $dir = APP_PATH . '/gate/' . $type . '/' . implode('/', $arr);
         $file = $class . '.php';
 
+        if (!is_dir($dir)) {
+            File::getInstance()->makeDirectory($dir, 0777, true);
+        }
+
+        if (file_exists($dir . '/' . $file) && !$this->option('force')) {
+            echo Color::error('文件已存在！') . PHP_EOL;
+            return;
+        }
+        
         $template = "<?php
 namespace App\Gate\\$type\\%s;
 
@@ -64,10 +73,7 @@ class %s extends $type
 {
 
 }";
-        if (file_exists($dir . '/' . $file) && !$this->option('force')) {
-            echo Color::error('文件已存在！') . PHP_EOL;
-            return;
-        }
+
         $data = sprintf($template, $namespace, $class);
         file_put_contents($dir . '/' . $file, $data);
         echo Color::success('文件新建成功！') . PHP_EOL;
