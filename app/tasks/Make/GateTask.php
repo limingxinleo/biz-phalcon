@@ -44,6 +44,11 @@ class GateTask extends Task
     public function execute($type)
     {
         $class = $this->argument('class');
+        if ($class === null) {
+            echo Color::error('请输入类名！') . PHP_EOL;
+            return;
+        }
+
         $arr = explode('\\', $class);
         $class = array_pop($arr) . $type;
         $namespace = implode('\\', $arr);
