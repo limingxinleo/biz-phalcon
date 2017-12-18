@@ -6,7 +6,7 @@
 // +----------------------------------------------------------------------
 // | Author: limx <715557344@qq.com> <https://github.com/limingxinleo>
 // +----------------------------------------------------------------------
-namespace Tests\App\Common\HttpClient;
+namespace Tests\Biz\App\Common\HttpClient;
 
 use App\Biz\BizException;
 use App\Biz\CodeException;

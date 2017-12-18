@@ -8,7 +8,7 @@
 // +----------------------------------------------------------------------
 namespace Tests\Biz;
 
-use Tests\App\Common\HttpClient\TestClient;
+use Tests\Biz\App\Common\HttpClient\TestClient;
 use Tests\UnitTestCase;
 
 /**
