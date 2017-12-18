@@ -19,6 +19,8 @@ class Response
 
         // 记录response日志
         static::log($data);
+
+        $response->setHeader('Access-Control-Allow-Origin', '*');
         return $response->setJsonContent($data);
     }
 
