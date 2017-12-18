@@ -54,7 +54,7 @@ class Handler
         if (env('APP_DEBUG', false)) {
             Response::fail($ex->getCode(), $ex->getMessage())->send();
         } else {
-            echo 'Sorry, 服务器内部错误';
+            Response::fail($ex->getCode(), 'Sorry, 服务器内部错误')->send();
         }
         exit(255);
     }
