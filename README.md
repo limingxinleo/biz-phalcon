@@ -1,6 +1,4 @@
-# PHALCON框架结构
-
-> 本项目是基础框架，可以此为基础，进行结构自定义封装
+# PHALCON快速开发框架
 
 [![Total Downloads](https://poser.pugx.org/limingxinleo/phalcon-project/downloads)](https://packagist.org/packages/limingxinleo/phalcon-project)
 [![Latest Stable Version](https://poser.pugx.org/limingxinleo/phalcon-project/v/stable)](https://packagist.org/packages/limingxinleo/phalcon-project)
