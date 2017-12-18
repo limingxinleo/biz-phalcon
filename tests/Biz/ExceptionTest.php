@@ -10,7 +10,7 @@ namespace Tests\Biz;
 
 use App\Common\Enums\ErrorCode;
 use App\Common\Exceptions\CodeException;
-use \UnitTestCase;
+use Tests\UnitTestCase;
 
 /**
  * Class UnitTest

@@ -6,12 +6,13 @@
 // +----------------------------------------------------------------------
 // | Author: limx <715557344@qq.com> <https://github.com/limingxinleo>
 // +----------------------------------------------------------------------
-namespace App\Common\HttpClient;
+namespace Tests\App\Common\HttpClient;
 
 use App\Biz\BizException;
 use App\Biz\CodeException;
 use App\Common\Enums\ErrorCode;
 use App\Utils\Curl;
+use App\Common\HttpClient\Client;
 
 class TestClient extends Client
 {

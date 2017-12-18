@@ -9,7 +9,7 @@
 namespace Tests\Biz;
 
 use App\Common\Enums\ErrorCode;
-use \UnitTestCase;
+use Tests\UnitTestCase;
 
 /**
  * Class UnitTest

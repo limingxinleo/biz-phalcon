@@ -9,7 +9,7 @@
 namespace Tests\Biz\Utils;
 
 use App\Utils\Curl;
-use \UnitTestCase;
+use Tests\UnitTestCase;
 
 /**
  * Class UnitTest

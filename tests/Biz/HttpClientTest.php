@@ -8,8 +8,8 @@
 // +----------------------------------------------------------------------
 namespace Tests\Biz;
 
-use App\Common\HttpClient\TestClient;
-use \UnitTestCase;
+use Tests\App\Common\HttpClient\TestClient;
+use Tests\UnitTestCase;
 
 /**
  * Class UnitTest
