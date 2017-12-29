@@ -27,5 +27,4 @@ class TestClient extends Client
     {
         return 'test';
     }
-
 }

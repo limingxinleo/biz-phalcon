@@ -12,5 +12,4 @@ use App\Core\Validation\Validator as BaseValidator;
 
 abstract class Validator extends BaseValidator
 {
-
 }

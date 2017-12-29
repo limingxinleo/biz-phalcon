@@ -27,7 +27,5 @@ class ResponseTest extends UnitTestCase
         $data = json_decode($json, true);
         $this->assertTrue($data['success']);
         $this->assertEquals(['key' => 'val'], $data['model']);
-
     }
-
 }

@@ -8,10 +8,8 @@
 // +----------------------------------------------------------------------
 namespace App\Gate\Response\Index;
 
-
 use App\Gate\Response\Response;
 
 class IndexResponse extends Response
 {
-
 }

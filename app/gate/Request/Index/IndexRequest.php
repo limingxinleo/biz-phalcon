@@ -12,5 +12,4 @@ use App\Gate\Request\Request;
 
 class IndexRequest extends Request
 {
-
 }

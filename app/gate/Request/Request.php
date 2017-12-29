@@ -9,7 +9,7 @@
 namespace App\Gate\Request;
 
 use Phalcon\Di\Injectable;
-use App\Utils\Request AS RequestUtil;
+use App\Utils\Request as RequestUtil;
 
 abstract class Request extends Injectable
 {

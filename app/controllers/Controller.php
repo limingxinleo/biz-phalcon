@@ -51,6 +51,4 @@ abstract class Controller extends \Phalcon\Mvc\Controller
 
         return $response->handle($result);
     }
-
-
 }

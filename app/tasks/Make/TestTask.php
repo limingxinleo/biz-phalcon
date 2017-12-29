@@ -63,6 +63,4 @@ class %s extends UnitTestCase
         file_put_contents($dir . '/' . $file, $data);
         echo Color::success('文件新建成功！') . PHP_EOL;
     }
-
 }
-

@@ -55,7 +55,9 @@ class Response
     public static function fail($code, $message = null)
     {
         // 避免出现第三方插件有错误码为0的情况
-        if ($code === 0) $code = ErrorCode::$ENUM_SYSTEM_ERROR;
+        if ($code === 0) {
+            $code = ErrorCode::$ENUM_SYSTEM_ERROR;
+        }
         if (empty($message)) {
             $message = ErrorCode::getMessage($code);
         }

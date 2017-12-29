@@ -26,7 +26,6 @@ class GateTask extends Task
         echo Color::colorize('  business        新建Business', Color::FG_LIGHT_GREEN) . PHP_EOL;
         echo Color::colorize('  response        新建Response', Color::FG_LIGHT_GREEN) . PHP_EOL;
         echo Color::colorize('  all             新建所有', Color::FG_LIGHT_GREEN) . PHP_EOL;
-
     }
 
     public function __call($name, $arguments)
@@ -79,6 +78,4 @@ class %s extends $type
         file_put_contents($dir . '/' . $file, $data);
         echo Color::success('文件新建成功！') . PHP_EOL;
     }
-
 }
-

@@ -16,7 +16,7 @@ abstract class Client
 {
     use InstanceTrait;
 
-    public abstract function getConfigName();
+    abstract public function getConfigName();
 
     public function getHost()
     {
