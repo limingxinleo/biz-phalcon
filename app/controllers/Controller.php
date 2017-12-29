@@ -17,7 +17,6 @@ use App\Gate\Validator\Validator;
 
 abstract class Controller extends \Phalcon\Mvc\Controller
 {
-
     public function initialize()
     {
     }
