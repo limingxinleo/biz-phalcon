@@ -9,11 +9,15 @@
 ### Changed
 * 修改单元测试，增加命名空间Tests
 * 修改代码规范
+* 修改vendor/autoload的加载位置
+* 默认phalcon-dev脚本加载app/bootstrap.php
 
 ### Fixed
 * 修改Socket基类的配置，避免覆盖Injectable的config服务
 
 ### Deleted
+* 删除多余注释
+* 删除updateOnly，使用useDynamicUpdate代替
 
 ## [2.1.5]
 ### Checked

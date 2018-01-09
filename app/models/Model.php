@@ -9,58 +9,17 @@
 namespace App\Models;
 
 use Xin\Phalcon\Logger\Sys as LogSys;
+use App\Core\Mvc\Model as BaseModel;
 
-/**
- * Class Model
- * @package App\Models
- */
-abstract class Model extends \Phalcon\Mvc\Model
+abstract class Model extends BaseModel
 {
-
     /**
      * Initialize method for model.
      */
     public function initialize()
     {
-        // 模型关系
-        // $options=['alias' => 'user', 'reusable' => true] alias:别名 reusable:模型是否复用
-        // $this->hasOne(...$params, $options = null)
-        // $this->belongsTo(...$params, $options = null)
-        // $this->hasMany(...$params, $options = null)
-        // $this->hasManyToMany(...$params, $options = null)
-
         // Sets if a model must use dynamic update instead of the all-field update
         // $this->useDynamicUpdate(true);
-    }
-
-    /**
-     * @desc   只修改某些字段的更新方法
-     * @author limx
-     * @param      $data
-     * @param null $whiteList
-     * @return bool
-     */
-    public function updateOnly($data, $whiteList = null)
-    {
-        $attributes = $this->getModelsMetaData()->getAttributes($this);
-        $this->skipAttributesOnUpdate(array_diff($attributes, array_keys($data)));
-
-        return parent::update($data, $whiteList);
-    }
-
-    public function beforeCreate()
-    {
-        // 数据创建之前
-    }
-
-    public function beforeUpdate()
-    {
-        // 数据更新之前
-    }
-
-    public function afterSave()
-    {
-        // 数据修改之后
     }
 
     /**
