@@ -12,8 +12,8 @@
     "require": {
         "php": ">=5.6",
         "ext-phalcon": "^3.0",
-        "limingxinleo/phalcon-project-library": "^1.1.3",
-        "limingxinleo/x-phalcon-enum": "^0.0.2"
+        "limingxinleo/x-phalcon-enum": "^0.0.2",
+        "limingxinleo/phalcon-project-library": "^1.2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.6",
