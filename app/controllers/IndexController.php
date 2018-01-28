@@ -8,6 +8,8 @@
 // +----------------------------------------------------------------------
 namespace App\Controllers;
 
+use App\Gate;
+
 class IndexController extends Controller
 {
     /**
@@ -19,10 +21,10 @@ class IndexController extends Controller
     public function indexAction()
     {
         return $this->execute(
-            new \App\Gate\Request\Index\IndexRequest(),
-            new \App\Gate\Validator\Index\IndexValidator(),
-            new \App\Gate\Business\Index\IndexBusiness(),
-            new \App\Gate\Response\Index\IndexResponse()
+            new Gate\Request\Index\IndexRequest(),
+            new Gate\Validator\Index\IndexValidator(),
+            new Gate\Business\Index\IndexBusiness(),
+            new Gate\Response\Index\IndexResponse()
         );
     }
 }
