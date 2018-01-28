@@ -21,7 +21,7 @@ abstract class Client
     public function getHost()
     {
         $env = di('config')->env;
-        $config = di('app')->api->toArray();
+        $config = di('configCenter')->get('api')->toArray();
         if (empty($config[$env])) {
             throw new \Exception('API环境配置不存在', ErrorCode::$ENUM_SYSTEM_API_CONFIG_NOT_EXIST);
         }

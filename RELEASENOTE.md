@@ -12,6 +12,7 @@
 * 修改vendor/autoload的加载位置
 * 默认phalcon-dev脚本加载app/bootstrap.php
 * 修改中间件默认执行顺序
+* 加入配置中心服务
 
 ### Fixed
 * 修改Socket基类的配置，避免覆盖Injectable的config服务
