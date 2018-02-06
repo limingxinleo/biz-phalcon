@@ -26,7 +26,7 @@ return new Config(
         | This value is version for this project.
         |
         */
-        'version' => '2.2.5',
+        'version' => '2.2.6',
 
         /*
         |--------------------------------------------------------------------------
@@ -290,6 +290,7 @@ return new Config(
                 'view' => App\Core\Services\Mvc\View::class,
                 'dispatcher' => App\Core\Services\Mvc\Dispatcher::class,
                 'middleware' => App\Core\Services\Mvc\Middleware::class,
+                'request' => App\Core\Services\Mvc\Request::class,
             ],
         ],
 
