@@ -2,7 +2,6 @@
 # @author limx
 .idea
 vendor/
-composer.lock
 .phalcon
 .env
 .env.bak
@@ -13,5 +12,7 @@ data
 public/dist/
 node_modules/
 package-lock.json
-socket.pid
+*.pid
 *.cache
+.scannerwork
+*.lock
